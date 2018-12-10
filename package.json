@@ -1,0 +1,24 @@
+{
+  "name": "jwt_based_auth_nodejs",
+  "version": "1.0.0",
+  "description": "jwt token based auth using nodejs & mongo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shobhitsharma12/JWT_based_auth_nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "JWT",
+    "mongo"
+  ],
+  "author": "shobhit sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shobhitsharma12/JWT_based_auth_nodejs/issues"
+  },
+  "homepage": "https://github.com/shobhitsharma12/JWT_based_auth_nodejs#readme"
+}
