@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/shobhitsharma12/JWT_based_auth_nodejs/issues"
   },
-  "homepage": "https://github.com/shobhitsharma12/JWT_based_auth_nodejs#readme"
+  "homepage": "https://github.com/shobhitsharma12/JWT_based_auth_nodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.3.15",
+    "morgan": "^1.9.1"
+  }
 }
