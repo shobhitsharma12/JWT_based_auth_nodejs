@@ -17,7 +17,7 @@ var rtsIndex = require('./app/routes/index.router');
 app.use('/api',rtsIndex);
 
 // configuration 
-var port = process.env.PORT || 9000; // used to create, sign, and verify tokens
+var port = process.env.PORT || 8080; // used to create, sign, and verify tokens
 mongoose.connect(config.database, { useNewUrlParser: true }); // connect to database
 app.set('superSecret', config.secret); // secret variable
 

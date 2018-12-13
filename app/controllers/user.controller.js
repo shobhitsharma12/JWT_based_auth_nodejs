@@ -23,7 +23,6 @@ module.exports.dataInsert = (req,res,next) =>{
 // authentication 
 
 module.exports.authenticate = (req,res,next) =>{
-    console.log(req.body);
     // find the user
 	User.findOne({
 		name: req.body.name
@@ -43,7 +42,7 @@ module.exports.authenticate = (req,res,next) =>{
 				// if user is found and password is right
 				// create a token
 				var payload = {
-					admin: user.admin	
+					admin: user._id
 				}
 				var token = jwt.sign(payload, config.secret, {
 					expiresIn: 86400 // expires in 24 hours
@@ -72,7 +71,8 @@ module.exports.tokenTest = (req,res,next) =>{
 				return res.json({ success: false, message: 'Failed to authenticate token.' });		
 			} else {
 				// if everything is good, save to request for use in other routes
-				req.decoded = decoded;	
+				req.decoded = decoded;
+				console.log(decoded);	
                 next();
                 res.json("authenticate");
 			}
